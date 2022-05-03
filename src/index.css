@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  background-image: url(./media/blurry-gradient-haikei.svg);
+  background-image: url(./assets/blurry-gradient-haikei.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +19,7 @@ body {
   justify-content: start;
   height: clamp(350px , 30vh, 600px) ;
   background-color: transparent;
-  background-image: url(./media/layered-peaks-haikei.svg);
+  background-image: url(./assets/layered-peaks-haikei.svg);
   background-repeat: repeat-x;
   background-size: 100vh;
   filter: drop-shadow(0 0 10px #242424);
