@@ -21,3 +21,35 @@ body {
   text-align: center;
   font-size: .9rem;
 }
+
+.grid-card {
+  align-content: center;
+  border-radius: .5rem ;
+  overflow: hidden;
+}
+
+.gif-title {
+  font-size: 1rem ;
+  text-transform: capitalize;
+  padding: 1px;
+  text-align: center;
+}
+
+.grid-img {
+  display: flex;
+  max-height: 12rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+}
+
+.card-grid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.search-value {
+  display: block;
+  text-align: center;
+}
