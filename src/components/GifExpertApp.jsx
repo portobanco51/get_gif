@@ -4,7 +4,7 @@ import { GifGrid } from './GifGrid'
 
 export const GifExpertApp = () => {
 
-    const [cat, setCat] = useState(["Don't be shy!"])
+    const [cat, setCat] = useState([""])
 
 
     return (<>

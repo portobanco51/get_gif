@@ -78,6 +78,10 @@ body {
   text-align: center;
 }
 
+.loading {
+  text-align: center;
+}
+
 .grid-img {
   display: flex;
   max-width: 12rem;
