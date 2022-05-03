@@ -1,25 +1,68 @@
 * {
   font-family: Helvetica,Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-  padding: 6rem;
+  margin: 0;
+  background-image: url(./assets/media/blurry-gradient-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #EBF0F2;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  height: clamp(350px , 30vh, 600px) ;
+  background-color: transparent;
+  background-image: url(./assets/media/layered-peaks-haikei.svg);
+  background-repeat: repeat-x;
+  background-size: 100vh;
+  filter: drop-shadow(0 0 10px #242424);
 }
 
 .header-title {
+  display: grid;
+  place-content: center;
   text-align: center;
+  margin: 0;
+  height: 15rem;
+}
+
+.title {
+  font-size: 3rem;
 }
 
 .search-input {
-  min-width: 100%;
+  min-width: 50%;
   font-size: 1.2rem;
-  color: grey;
+  margin: auto;
+  display: flex;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #EBF0F2;
+  outline: none;
+  background-color: transparent;
+  transition: all 200ms ease-in-out;
 }
+
+.search-input:focus {
+  border-bottom: 1px solid #4369D9;
+  }
 
 .searchbar-title {
   display: block;
   text-align: center;
   font-size: .9rem;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 .grid-card {
@@ -37,7 +80,7 @@ body {
 
 .grid-img {
   display: flex;
-  max-height: 12rem;
+  max-width: 12rem;
   margin: 1rem auto;
   border-radius: .5rem;
 }
@@ -52,4 +95,7 @@ body {
 .search-value {
   display: block;
   text-align: center;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  margin: 1rem;
 }

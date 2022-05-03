@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const GIfGridItem = ({ id, title, url }) => {
+export const GifGridItem = ({ id, title, url }) => {
     return (
         <div className='grid-card'>
             <img className='grid-img' src={url} alt={title} />

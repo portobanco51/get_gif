@@ -4,18 +4,20 @@ import { GifGrid } from './GifGrid'
 
 export const GifExpertApp = () => {
 
-    const [cat, setCat] = useState(["Rick & Morty"])
+    const [cat, setCat] = useState(["Don't be shy!"])
 
 
     return (<>
-        <h2 className="header-title">GifExpertApp</h2>
-        <AddCategory setCat={setCat} cat={cat} />
-        <hr />
-        <ol>
-            {cat.map((cat, i) =>
-                <GifGrid key={cat} cat={cat} />
-            )}
-        </ol>
+
+        <header className='header'>
+            <section className='header-title'>
+                <h2 className='title'>GifExpertApp</h2>
+            </section>
+            <AddCategory setCat={setCat} cat={cat} />
+        </header>
+        <main className='main'>
+            <GifGrid key={cat} cat={cat} />
+        </main>
     </>
     )
 }
