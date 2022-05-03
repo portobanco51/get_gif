@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { PropTypes } from "prop-types";
 
-export const AddCategory = ({ setCat }) => {
+export const AddCategory = ({ cat, setCat }) => {
 
     const [input, setInput] = useState('')
 
@@ -11,8 +11,8 @@ export const AddCategory = ({ setCat }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        if (input !== '') {
-            setCat([input])
+        if (input.trim().length > 2) {
+            setCat([input, ...cat])
             setInput('')
         }
     }

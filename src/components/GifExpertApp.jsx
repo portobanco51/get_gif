@@ -4,8 +4,7 @@ import { GifGrid } from './GifGrid'
 
 export const GifExpertApp = () => {
 
-    const [cat, setCat] = useState([""])
-
+    const [cat, setCat] = useState([''])
 
     return (<>
 
@@ -16,7 +15,11 @@ export const GifExpertApp = () => {
             <AddCategory setCat={setCat} cat={cat} />
         </header>
         <main className='main'>
-            <GifGrid key={cat} cat={cat} />
+            {
+                cat.map(cat => {
+                    return <GifGrid key={cat} cat={cat} />
+                })
+            }
         </main>
     </>
     )
