@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #EBF0F2;
+  color: #d9d9d9;
 }
 
 .header {
@@ -53,6 +53,11 @@ body {
 
 .search-input:focus {
   border-bottom: 1px solid #4369D9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: #EBF0F2;
+  outline: none;
   }
 
 .searchbar-title {

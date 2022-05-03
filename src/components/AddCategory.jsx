@@ -12,7 +12,7 @@ export const AddCategory = ({ cat, setCat }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         if (input.trim().length > 2) {
-            setCat([input, ...cat])
+            setCat([input])
             setInput('')
         }
     }

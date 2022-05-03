@@ -15,11 +15,7 @@ export const GifExpertApp = () => {
             <AddCategory setCat={setCat} cat={cat} />
         </header>
         <main className='main'>
-            {
-                cat.map(cat => {
-                    return <GifGrid key={cat} cat={cat} />
-                })
-            }
+            <GifGrid key={cat} cat={cat} />
         </main>
     </>
     )
