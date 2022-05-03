@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5c31357.css",
+    "main.js": "/static/js/main.f44d448e.js",
+    "static/media/blurry-gradient-haikei.svg": "/static/media/blurry-gradient-haikei.aed694310460f42b1557.svg",
+    "static/media/layered-peaks-haikei.svg": "/static/media/layered-peaks-haikei.b61eccb055411987aa5e.svg",
+    "index.html": "/index.html",
+    "main.c5c31357.css.map": "/static/css/main.c5c31357.css.map",
+    "main.f44d448e.js.map": "/static/js/main.f44d448e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5c31357.css",
+    "static/js/main.f44d448e.js"
+  ]
+}
