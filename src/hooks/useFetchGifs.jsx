@@ -9,13 +9,12 @@ export const useFetchGifs = (cat) => {
     });
 
     useEffect(() => {
-        getGifs(cat)
-            .then(imgs => {
-                setState({
-                    data: imgs,
-                    loading: false
-                })
+        getGifs(cat).then(imgs => {
+            setState({
+                data: imgs,
+                loading: false
             })
+        })
     }, [cat])
 
 
