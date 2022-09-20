@@ -140,3 +140,7 @@ body::-webkit-scrollbar {
     text-transform: capitalize;
     color: #e0b959;
 }
+
+.mata-img {
+    display: none;
+}

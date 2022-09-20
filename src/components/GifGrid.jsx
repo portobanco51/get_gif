@@ -18,7 +18,7 @@ export const GifGrid = ({ cat }) => {
                     ))
                 }
             </div>
-            <img src={MetaImg} alt="metaimg" className='meta-img' />
+            <img src={MetaImg} alt="metaImg" className='meta-img' />
         </>
     )
 }
