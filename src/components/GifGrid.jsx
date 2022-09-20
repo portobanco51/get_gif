@@ -1,6 +1,7 @@
 import React from 'react'
 import { useFetchGifs } from '../hooks/useFetchGifs'
 import { GifGridItem } from './GifGridItem'
+import MetaImg from '../assets/media/banner_gif.png';
 
 export const GifGrid = ({ cat }) => {
 
@@ -8,7 +9,7 @@ export const GifGrid = ({ cat }) => {
 
     return (
         <>
-            <h3 className='search-value'>{cat}</h3>
+            {images.length === 0 ? null : <h3 className='search-value'>Looking gifs for: <span className="span-value">'{cat}'</span></h3>}
             {loading && <p className='loading'>Loading...</p>}
             <div className='card-grid'>
                 {
@@ -17,6 +18,7 @@ export const GifGrid = ({ cat }) => {
                     ))
                 }
             </div>
+            <img src={MetaImg} alt="metaimg" className='meta-img' />
         </>
     )
 }
