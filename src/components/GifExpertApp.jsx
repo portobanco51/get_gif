@@ -12,7 +12,7 @@ export const GifExpertApp = () => {
                 <h2 className='title'>Get<span className="span-header">_</span>Gif</h2>
                 <h3 className='subtitle span-header'>Search and download quickly gifs from GIPHY!</h3>
             </section>
-            <AddCategory setCat={setCat} cat={cat} />
+            <AddCategory setCat={setCat} />
         </header>
         <main>
             <GifGrid key={cat} cat={cat} />
